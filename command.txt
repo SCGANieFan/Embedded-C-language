@@ -1,0 +1,12 @@
+
+
+//GCC
+GCC = arm-linux-gnueabi-gcc
+
+//
+arm-linux-gnueabi-gcc main.c SUM.S
+
+//run
+qemu-arm-static -B 0x10000000 -L /usr/arm-linux-gnueabi ./bin
+
+

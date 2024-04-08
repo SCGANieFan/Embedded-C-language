@@ -1,9 +1,14 @@
 #include<stdio.h>
-int add(int a,int b);
+int sum(int a,int b)
+{
+    int sum = a+b;
+    printf("sum:%d\n",sum);
+    return sum;
+}
+void SUM_ASM();
 int main()
 {
-    int sum=0;
-    sum=add(3,2);
-    printf("sum:%d\n",sum);
+    SUM_ASM();
+    // printf("sum:%d\n",1);
     return 1;
 }
